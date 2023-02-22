@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --first-color: #000000;
+    --second-color: #F6F6F6;
+    --third-color: #22D4FD;
+    --hover-color: #272727;
+
+    --main-font: "Krona One", sans-serif;
+    --second-font: "Montserrat", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*height: 100vh; vh = viewport height - removed to integrate footer*/
+    box-sizing: border-box;
+    background-color: var(--first-color);
+    color: var(--second-color);
+}
+
+.header {
+    padding: 2% 0 0 15%;
+}
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__link {
+    font-family: var(--second-font);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--third-color);
+    text-decoration: none;
+}
+
+.presentation {
+    padding: 5% 15%;
+    display: flex;
+    /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentation__content {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* https://css-tricks.com/almanac/properties/g/gap/ */
+}
+
+.presentation__content__title {
+    font-size: 36px;
+    font-family: var(--main-font);
+}
+
+.title-highlight {
+    color: var(--third-color);
+}
+
+.presentation__content__text {
+    font-size: 24px;
+    font-family: var(--second-font);
+}
+
+.presentation__content__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.presentation__content__links__subtitle {
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.presentation__content__links__link {
+    /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 400px;
+    text-align: center;
+    border: 2px solid var(--third-color);
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 21.5px 0px;
+    text-decoration: none;
+    color: var(--second-color);
+    font-family: var(--second-font);
+}
+
+.presentation__content__links__link:hover {
+    background-color: var(--hover-color);
+    /* https://www.w3schools.com/CSSref/sel_hover.php */
+}
+
+.footer {
+    margin: 0;
+    color: var(--first-color);
+    background-color: var(--third-color);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--second-font);
+    font-size: 24px;
+    font-weight: 400;
+}
