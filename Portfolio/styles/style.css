@@ -32,7 +32,7 @@ body {
 
 .header__menu__link {
     font-family: var(--second-font);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     color: var(--third-color);
     text-decoration: none;
@@ -44,17 +44,18 @@ body {
     /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .presentation__content {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px; /* https://css-tricks.com/almanac/properties/g/gap/ */
 }
 
 .presentation__content__title {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-family: var(--main-font);
 }
 
@@ -63,7 +64,7 @@ body {
 }
 
 .presentation__content__text {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--second-font);
 }
 
@@ -78,7 +79,7 @@ body {
 .presentation__content__links__subtitle {
     font-family: var(--main-font);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .presentation__content__links__link {
@@ -86,11 +87,11 @@ body {
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 400px;
+    width: 50%;
     text-align: center;
     border: 2px solid var(--third-color);
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0px;
     text-decoration: none;
@@ -103,6 +104,10 @@ body {
     /* https://www.w3schools.com/CSSref/sel_hover.php */
 }
 
+.presentation__image {
+    width: 50%;
+}
+
 .footer {
     margin: 0;
     color: var(--first-color);
@@ -110,6 +115,24 @@ body {
     padding: 24px;
     text-align: center;
     font-family: var(--second-font);
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
+}
+@media (max-width: 1200px) {
+    .header {
+        padding: 10%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+
+    .presentation {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentation__content {
+        width: auto;
+    }
 }
