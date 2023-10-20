@@ -68,6 +68,13 @@ body {
     font-family: var(--second-font);
 }
 
+.presentation__content__text__justify {
+    font-size: 1.5rem;
+    font-family: var(--second-font);
+    text-align: justify;
+    text-indent: 10%;
+}
+
 .presentation__content__links {
     display: flex;
     flex-direction: column;
@@ -108,6 +115,15 @@ body {
     width: 50%;
 }
 
+.presentation__image__about {
+    width: 25%;
+    position:fixed;
+    top: 10%;
+    left: 60%;
+}
+
+
+
 .footer {
     margin: 0;
     color: var(--first-color);
@@ -134,5 +150,9 @@ body {
 
     .presentation__content {
         width: auto;
+    }
+
+    .presentation__image__about {
+        display: none;
     }
 }
