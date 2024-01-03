@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --first-color: #000000;
-    --second-color: #F6F6F6;
-    --third-color: #22D4FD;
+    --first-color: rgb(214, 214, 214);
+    --second-color: #black;
+    --third-color: rgb(0, 161, 197);
     --hover-color: #272727;
 
     --main-font: "Krona One", sans-serif;
@@ -112,7 +112,7 @@ body {
 }
 
 .presentation__image {
-    width: 50%;
+    width: 25%;
 }
 
 .presentation__image__about {
