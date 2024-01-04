@@ -2,9 +2,10 @@
 
 :root {
     --first-color: #E8F1F2;
-    --second-color: #13293D;
-    --third-color: #1B98E0;
-    --hover-color: #247ba0;
+    --second-color: #1b98e0;
+    --third-color: #247BA0;
+    --forth-color: #006494;
+    --fifth-color: #13293D;
 
     --main-font: "Krona One", sans-serif;
     --second-font: "Montserrat", sans-serif;
@@ -18,8 +19,9 @@
 body {
     /*height: 100vh; vh = viewport height - removed to integrate footer*/
     box-sizing: border-box;
-    background-color: var(--first-color);
-    color: var(--second-color);
+    /* background-color: var(--first-color); */
+    color: var(--fifth-color);
+    background-image: linear-gradient(135deg, var(--first-color), var(--second-color));
 }
 
 .header {
@@ -31,13 +33,14 @@ body {
     border-radius: 10px;
     display: flex;
     gap: 80px;
+    filter:drop-shadow(5px 5px 4px var(--fifth-color));
 }
 
 .header__menu__link {
     font-family: var(--second-font);
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--third-color);
+    color: var(--fifth-color);
     text-decoration: none;
 }
 
@@ -64,10 +67,13 @@ body {
 .presentation__content__title {
     font-size: 2.25rem;
     font-family: var(--main-font);
+    /* -webkit-text-stroke: 0.01rem var(--fifth-color); */
 }
 
 .title-highlight {
-    color: var(--third-color);
+    color: var(--first-color);
+    text-shadow: 0.25rem 0.25rem 0.125rem var(--fifth-color);
+    -webkit-text-stroke: 0.01rem var(--fifth-color);
 }
 
 .presentation__content__text {
@@ -78,6 +84,7 @@ body {
 .presentation__content__text__justify {
     font-size: 1.5rem;
     font-family: var(--second-font);
+    color: var(--fifth-color);
     text-align: justify;
     text-indent: 10%;
 }
@@ -97,24 +104,52 @@ body {
 }
 
 .presentation__content__links__link {
-    /* background-color: #22D4FD; */
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 2rem;
     width: 50%;
     text-align: center;
-    border: 2px solid var(--third-color);
+    border: 2px solid var(--fifth-color);
     border-radius: 8px;
     font-size: 1.5rem;
     font-weight: 600;
     padding: 21.5px 0px;
     text-decoration: none;
-    color: var(--second-color);
+    color: var(--fifth-color);
     font-family: var(--second-font);
+    background-image: radial-gradient(closest-side at 60%, var(--first-color), var(--second-color), var(--third-color) , var(--forth-color));
+    filter:drop-shadow(5px 5px 4px var(--fifth-color));
+}
+
+.presentation__content__links__projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 10rem; */
+    margin: 32px;
+    filter:drop-shadow(5px 5px 4px var(--fifth-color));
+}
+
+.presentation__content__links__projects {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    /* width: 50%; */
+    text-align: center;
+    border: 2px solid var(--fifth-color);
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 21.5px 0px;
+    text-decoration: none;
+    color: var(--fifth-color);
+    font-family: var(--second-font);
+    background-image: radial-gradient(closest-side at 60%, var(--first-color), var(--second-color), var(--third-color) , var(--forth-color));
 }
 
 .presentation__content__links__link:hover {
-    background-color: var(--hover-color);
+    background-image: radial-gradient(circle, var(--forth-color), var(--third-color), var(--second-color) , var(--first-color));
     /* https://www.w3schools.com/CSSref/sel_hover.php */
 }
 
@@ -125,39 +160,36 @@ body {
 .presentation__image__wrapper {
     width: 50%;
     height: 50%;
-    border: 20px solid var(--third-color);
+    border: 20px solid var(--forth-color);
     display: flex;
     justify-content:center;
     align-items:end;
     border-radius: 10%;
+    filter: drop-shadow(15px 10px 4px var(--fifth-color));
   }
 
 .presentation__image {
     width: 50%;
     padding: 0%;
+    filter: drop-shadow(20px 04px 4px var(--fifth-color));
 }
-
-/* .presentation__image_overlay {
-    width: 150%;
-    position: relative;
-    bottom: 30%;
-    left: -42%;
-    padding: 0%;
-} */
 
 .presentation__image__about {
     width: 25%;
     position:fixed;
     top: 10%;
     left: 60%;
+    filter: drop-shadow(20px 04px 4px var(--fifth-color));
 }
 
-
+.video {
+    filter:drop-shadow(20px 10px 4px var(--fifth-color));
+}
 
 .footer {
     margin: 0;
     color: var(--first-color);
-    background-color: var(--third-color);
+    background-color: var(--fifth-color);
     padding: 24px;
     text-align: center;
     font-family: var(--second-font);
@@ -194,7 +226,7 @@ body {
         justify-content:center;
         align-items:end;
         border-radius: 10%;
-        border: 10px solid var(--third-color);
+        border: 10px solid var(--forth-color);
       }
     
 
