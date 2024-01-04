@@ -148,7 +148,7 @@ body {
     background-image: radial-gradient(closest-side at 60%, var(--first-color), var(--second-color), var(--third-color) , var(--forth-color));
 }
 
-.presentation__content__links__link:hover {
+.presentation__content__links__link:hover, .presentation__content__links__projects:hover {
     background-image: radial-gradient(circle, var(--forth-color), var(--third-color), var(--second-color) , var(--first-color));
     /* https://www.w3schools.com/CSSref/sel_hover.php */
 }
