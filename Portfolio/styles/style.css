@@ -81,6 +81,11 @@ body {
     font-family: var(--second-font);
 }
 
+.presentation__content__text li {
+    font-size: 1.0rem;
+    font-family: var(--second-font);
+}
+
 .presentation__content__text__justify {
     font-size: 1.5rem;
     font-family: var(--second-font);
