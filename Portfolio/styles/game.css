@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+
   }
   
   .container img {
@@ -19,6 +20,33 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  
+  .crossroad {
+    /* width: 750px;
+    height: 750px;
+    border: 2px solid blue;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 5%; */
+  }
+
+  .crossroad iframe {
+    border: 10px solid #13293D;
+    position: relative;
+    width: 500px;
+    height: 442px;
+    /* border: 2px solid blue; */
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transform: scale(155%) ;
+    top: -39px;
+    scroll-behavior:unset;
   }
   
   .word {
@@ -51,4 +79,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  @media (max-width: 1200px) {
+    .crossroad {
+      width: 95%;
+      height: 60%;
+    }
+
+    .crossroad iframe {
+      width: 500px;
+      height: 442px;
+    -webkit-transform: scale(100%) ;
+    }
   }

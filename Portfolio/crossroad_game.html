@@ -17,32 +17,26 @@
             <a class="header__menu__link" href="hobbies.html">Hobbies</a>
         </nav>
     </header>
-    <main class="presentation">
+    <main class="container">
         <section class="presentation__content">
             
             <div class="container">
                 <h1>Crossroad Game</h1>
                 <div class="crossroad">
-                  <!-- The Melting Snowman graphic will be dynamically generated using JavaScript -->
-                </div>
-                <div class="word">
-                  <!-- The current word will be dynamically generated using JavaScript -->
-                </div>
-                <div class="letters">
-                  <!-- The letters will be dynamically generated using JavaScript -->
-                </div>
-                <div class="message">
-                  <!-- The win/lose message will be dynamically generated using JavaScript -->
+                    <iframe id="crossroad" src="https://editor.p5js.org/Elderguard/full/sS6IrUKnI" scrolling="no"></iframe>
+                    <script type="text/javascript">
+                        function focusOnIframe(iFrameID) {
+                          if (frames[iFrameID]!=undefined)
+                            frames[iFrameID].focus(); // Works in all browser, except Firefox
+                          else
+                            document.getElementById(iFrameID).focus();  // Works in Firefox
+                        }
+                        focusOnIframe('crossroad');
+                      </script>
                 </div>
               </div>
               
-              <script src="./games/crossroad_final/sketch.js"></script>
-              <script src="./games/crossroad_final/media.js"></script>
-              <script src="./games/crossroad_final/actor1.js"></script>
-              <script src="./games/crossroad_final/car.js"></script>
-              <script src="./games/crossroad_final/p5.collide2d.js"></script>
         </section>
-            <img class="presentation__image" src="./assets/sbg.png" alt="Image of Elder Ramos">
         
     </main>    
 </body>
