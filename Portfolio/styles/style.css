@@ -34,6 +34,7 @@ body {
     display: flex;
     gap: 80px;
     filter:drop-shadow(5px 5px 4px var(--fifth-color));
+    align-items: center;
 }
 
 .header__menu__link {
@@ -201,6 +202,35 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
 }
+
+.mode {
+    float: right;
+}
+
+.change {
+    cursor: pointer;
+    /* border: 1px solid #555;
+    border-radius: 5px; */
+    /* width: 10px; */
+    height: auto;
+    text-align: center;
+    padding: 0px;
+    margin-left: 8px;
+    margin-bottom: -5px;
+}
+
+#darkicon {
+    width: 50px;
+}
+
+.dark {
+    --fifth-color: #E8F1F2;
+    --forth-color: #1b98e0;
+    --third-color: #247BA0;
+    --second-color: #006494;
+    --first-color: #13293D;
+}
+
 @media (max-width: 1200px) {
     .header {
         padding: 10%;
