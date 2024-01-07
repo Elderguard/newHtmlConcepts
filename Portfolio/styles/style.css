@@ -8,7 +8,7 @@
     --forth-color: #006494;
     --fifth-color: #13293D; */
 
-    --shadow-color: #10103D;
+    /* --shadow-color: #10103D; */
 
     --main-font: "Krona One", sans-serif;
     --second-font: "Montserrat", sans-serif;
@@ -234,6 +234,7 @@ body {
     --third-color: #247BA0;
     --second-color: #006494;
     --first-color: #13293D;
+    --shadow-color: #10103D;
 }
 
 .light {
@@ -243,6 +244,7 @@ body {
     --third-color: #247BA0;
     --forth-color: #006494;
     --fifth-color: #13293D;
+    --shadow-color: #13293D;
 }
 
 @media (max-width: 1200px) {
