@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --first-color: #E8F1F2;
+
+    /* --first-color: #E8F1F2;
     --second-color: #1b98e0;
     --third-color: #247BA0;
     --forth-color: #006494;
-    --fifth-color: #13293D;
+    --fifth-color: #13293D; */
+
+    --shadow-color: #10103D;
 
     --main-font: "Krona One", sans-serif;
     --second-font: "Montserrat", sans-serif;
@@ -17,6 +20,7 @@
 }
 
 body {
+    background-color: #13293D;
     /*height: 100vh; vh = viewport height - removed to integrate footer*/
     box-sizing: border-box;
     /* background-color: var(--first-color); */
@@ -33,7 +37,7 @@ body {
     border-radius: 10px;
     display: flex;
     gap: 80px;
-    filter:drop-shadow(5px 5px 4px var(--fifth-color));
+    filter:drop-shadow(5px 5px 4px var(--shadow-color));
     align-items: center;
 }
 
@@ -73,7 +77,7 @@ body {
 
 .title-highlight {
     color: var(--first-color);
-    text-shadow: 0.25rem 0.25rem 0.125rem var(--fifth-color);
+    text-shadow: 0.25rem 0.25rem 0.125rem var(--shadow-color);
     -webkit-text-stroke: 0.01rem var(--fifth-color);
 }
 
@@ -124,7 +128,7 @@ body {
     color: var(--fifth-color);
     font-family: var(--second-font);
     background-image: radial-gradient(closest-side at 60%, var(--first-color), var(--second-color), var(--third-color) , var(--forth-color));
-    filter:drop-shadow(5px 5px 4px var(--fifth-color));
+    filter:drop-shadow(5px 5px 4px var(--shadow-color));
 }
 
 .presentation__content__links__projects {
@@ -134,7 +138,7 @@ body {
     justify-content: space-between;
     /* gap: 10rem; */
     margin: 32px;
-    filter:drop-shadow(5px 5px 4px var(--fifth-color));
+    filter:drop-shadow(5px 5px 4px var(--shadow-color));
 }
 
 .presentation__content__links__projects {
@@ -171,13 +175,13 @@ body {
     justify-content:center;
     align-items:end;
     border-radius: 10%;
-    filter: drop-shadow(15px 10px 4px var(--fifth-color));
+    filter: drop-shadow(15px 10px 4px var(--shadow-color));
   }
 
 .presentation__image {
     width: 50%;
     padding: 0%;
-    filter: drop-shadow(20px 04px 4px var(--fifth-color));
+    filter: drop-shadow(20px 04px 4px var(--shadow-color));
 }
 
 .presentation__image__about {
@@ -185,11 +189,11 @@ body {
     position:fixed;
     top: 10%;
     left: 60%;
-    filter: drop-shadow(20px 04px 4px var(--fifth-color));
+    filter: drop-shadow(20px 04px 4px var(--shadow-color));
 }
 
 .video {
-    filter:drop-shadow(20px 10px 4px var(--fifth-color));
+    filter:drop-shadow(20px 10px 4px var(--shadow-color));
 }
 
 .footer {
@@ -224,11 +228,21 @@ body {
 }
 
 .dark {
+    background-color: none;
     --fifth-color: #E8F1F2;
     --forth-color: #1b98e0;
     --third-color: #247BA0;
     --second-color: #006494;
     --first-color: #13293D;
+}
+
+.light {
+    background-color: none;
+    --first-color: #E8F1F2;
+    --second-color: #1b98e0;
+    --third-color: #247BA0;
+    --forth-color: #006494;
+    --fifth-color: #13293D;
 }
 
 @media (max-width: 1200px) {

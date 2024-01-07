@@ -9,9 +9,11 @@ function darkMode() {
     dark = true;
     //Add 'dark' class to the element in the var body
     body.classList.add('dark');
+    body.classList.remove('light');
     //Save in local storage the value for dark mode on
-    localStorage.setItem('mode','dark');
+    localStorage.setItem('theme','dark');
     document.querySelector(".change").innerHTML = "<img id='darkicon' src='./assets/darkmode.png'>";
+
 }
 
 function lightMode() {
@@ -19,16 +21,24 @@ function lightMode() {
     dark = false;
     //Remove 'dark' class from the element in the var body
     body.classList.remove('dark');
-    //Save in local storage the value for dark mode on
-    localStorage.setItem('mode','dark');
+    body.classList.add('light');
+    //Save in local storage the value for dark mode off
+    localStorage.setItem('theme','light');
     document.querySelector(".change").innerHTML = "<img id='darkicon' src='./assets/lightmode.png'>";
+    
 }
 
 //MAIN
 
 //Check stored values
-if(localStorage.getItem('mode') == 'dark') {
+console.log(localStorage.getItem('theme'));
+if(localStorage.getItem('theme') == 'dark') {
     darkMode();
+}
+if(localStorage.getItem('theme') == 'light') {
+    lightMode();
+} else if (localStorage.getItem('theme') == null || localStorage.getItem('theme') == "null") {
+    lightMode();
 }
 
 //Add 'dark' class when users click on the change button.
