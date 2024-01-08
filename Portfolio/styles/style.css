@@ -199,7 +199,7 @@ body {
 .footer {
     margin: 0;
     color: var(--first-color);
-    background-color: var(--fifth-color);
+    background-color: var(--footer-color);
     padding: 24px;
     text-align: center;
     font-family: var(--second-font);
@@ -219,7 +219,7 @@ body {
     height: auto;
     text-align: center;
     padding: 0px;
-    margin-left: 8px;
+    margin-left: -25px;
     margin-bottom: -5px;
 }
 
@@ -235,6 +235,7 @@ body {
     --second-color: #006494;
     --first-color: #13293D;
     --shadow-color: #10103D;
+    --footer-color: var(--third-color);
 }
 
 .light {
@@ -245,6 +246,7 @@ body {
     --forth-color: #006494;
     --fifth-color: #13293D;
     --shadow-color: #13293D;
+    --footer-color: var(--fifth-color);
 }
 
 @media (max-width: 1200px) {
