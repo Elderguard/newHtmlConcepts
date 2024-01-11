@@ -1,0 +1,10 @@
+<input type="text" size="40" onkeydown="identificaTecla(event)">
+
+<p id="div"></p>
+
+<script>
+function identificaTecla(event) {
+    let key = event.code || event.key;
+    document.getElementById("div").innerHTML = "A tecla pressionada foi: " + key;
+}
+</script>

@@ -1,3 +1,4 @@
+importScripts(p5.play.js)
 
 function setup() {
   createCanvas(500, 400);
