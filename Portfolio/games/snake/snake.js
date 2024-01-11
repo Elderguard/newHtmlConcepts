@@ -61,24 +61,28 @@ function jogo(){
     if(positionX < 0){
         positionX = grid-1;
     }
-    if(positionX > grid){
-        positionX = grid-20;
+    if(positionX >= grid){
+        positionX = 0;
     }
     if(positionY < 0){
         positionY = grid-1;
     }
-    if(positionY > grid){
-        positionY = -1;
+    if(positionY > grid-1){
+        positionY = 0;
+    }
+
+    
+    //configuração da cobra
+    ctx.fillStyle = "#00f102";
+    for(let i=0; i<snake.length;i++){
+        ctx.fillRect(snake[i].x*grid, snake[i].y*grid, grid-1, grid-1);
+        if(snake[i].x == positionX && snake[i].y == positionY){
+            tam=3;
+        }
     }
 
     //posicionando a cobra
     snake.push({x:positionX, y: positionY});
-
-    //configuração da cobra
-    ctx.fillStyle = "#00f102";
-    for(let i=0; i<snake.length;i++){
-        ctx.fillRect(snake[i].x*grid, snake[i].y*grid, grid-1, grid-1)
-    }
 
     //apagando
     while(snake.length > tam){
