@@ -24,7 +24,7 @@ function lightMode() {
     body.classList.add('light');
     //Save in local storage the value for dark mode off
     localStorage.setItem('theme','light');
-    document.querySelector(".change").innerHTML = "<img id='darkicon' src='/Portfolio/assets/lightmode.png'>";
+    document.querySelector(".change").innerHTML = "<img id='darkicon' src='/assets/lightmode.png'>";
     
 }
 
