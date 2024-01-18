@@ -187,7 +187,7 @@ body {
 .presentation__image__about {
     width: 25%;
     position:fixed;
-    top: 10%;
+    top: 20%;
     left: 60%;
     filter: drop-shadow(20px 04px 4px var(--shadow-color));
 }
@@ -247,6 +247,11 @@ body {
     --fifth-color: #13293D;
     --shadow-color: #13293D;
     --footer-color: var(--fifth-color);
+}
+
+.game_title {
+    /* margin: 40%; */
+    display:inline-block;
 }
 
 @media (max-width: 1200px) {

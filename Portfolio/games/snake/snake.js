@@ -14,32 +14,39 @@ window.onload = function(){
     velY = 0;
     grid = 20;
     tam = 3;
+    gameSpeed = 100;
 
     //chamada da função jogo a cada 100 milisegundos
-    setInterval(jogo, 100);
+    setInterval(jogo, gameSpeed);
 
     //controles
     document.addEventListener("keydown", function identificaTecla(event) {
         let key = event.code || event.key;
+        // key = lower(key);
     
         switch(event.key){
             // seta direita = ArrowRight
             case "ArrowRight":
+            case 'd':
                 velX = 1;
                 velY = 0;
                 break;
-            // seta esquerda = ArrowLeft
+
+                // seta esquerda = ArrowLeft
             case "ArrowLeft":
+            case 'a':
                 velX = -1;
                 velY = 0;
                 break;
             // seta cima = ArrowUp
             case "ArrowUp":
+            case "w":
                 velX = 0;
                 velY = -1;
                 break;
             // seta baixo = ArrowDown
             case "ArrowDown":
+            case "s":
                 velX = 0;
                 velY = 1;
                 break;

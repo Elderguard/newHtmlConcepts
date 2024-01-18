@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hobbies</title>
+    <title>Flappy Bird</title>
     <script src="/Portfolio/js/darktoggle.js" type="module"></script>
     <link rel="stylesheet" href="/Portfolio/styles/style.css">
+
 </head>
 <body>
     <header class="header">
@@ -21,22 +22,12 @@
         </nav>
     </header>
     <main class="presentation">
-        <section class="presentation__content">
-            <h1 class="presentation__content__title">Hobbies</h1>
-            <div>    
-                <p class="presentation__content__text">I am also a musician, and a proud songwriter. You can check my song on youtube here:</p>
-            </div>
-            <div class="video">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/u3JOT2SHrrs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </section>
-        <div class="presentation__image__wrapper">
-            <img class="presentation__image" src="./assets/sbgblue2.png" alt="Image of Elder Ramos">         
-        </div>
-    </main>
+        <canvas id="canvas" width="288" height="512"></canvas>
+        <script src="/Portfolio/games/flappy_bird/flappy/Flappy bird/flappy.js"></script>
+    </main>    
 
-    <footer class="footer">
-        <p>Developed by Elder Ramos, 2024.</p>
-    </footer>
 </body>
+<footer class="footer">
+    <p>Developed by Elder Ramos, 2024.</p>
+</footer>
 </html>
