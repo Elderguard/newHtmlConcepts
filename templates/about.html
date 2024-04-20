@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-    <script src="js/darktoggle.js" type="module"></script>
-    <link rel="stylesheet" href="styles/style.css">
+    <script src="{{ url_for('static', filename='darktoggle.js')}}" type="module"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <header class="header">
@@ -54,7 +54,9 @@
                 <p class="presentation__content__text__justify">I have studied and specialized in both Front-End development such as the creation of websites or apps and Cybersecurity for what’s known as “ethical hackers”. Cybersecurity for ethical hackers is focused on “Blue Team” or “Red Team hackers”, there are various types of hackers and there are different categories for each. Ethical hackers follow laws and ethics, causing no harm. The Blue team defends companies, while the Red team finds vulnerabilities, breaches, and reports for fixes. I'm currently enrolled in a 3-year cybersecurity course, and IT has become a passion of mine that I would love to share with you.</p>
             </div>
         </section>
+        <div class="presentation__image__wrapper">
             <img class="presentation__image" src="assets/sbgblue2.png" alt="Image of Elder Ramos">         
+        </div>      
     </main>
 
     <footer class="footer">

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+
 :root {
 
     /* --first-color: #E8F1F2;
@@ -224,6 +225,7 @@ body {
 }
 
 #darkicon {
+    /* background-image: url(../templates/assets/darkmode.png); */
     width: 50px;
 }
 
